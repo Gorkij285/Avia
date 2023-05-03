@@ -1,0 +1,35 @@
+.App {
+  width: 960px;
+  background: #f3f7fa;
+  padding-left: 103px;
+  padding-right: 103px;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  padding-bottom: 30px;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 800px) {
+  .App {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .left {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 540px) {
+  .App {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}

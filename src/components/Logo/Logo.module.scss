@@ -1,0 +1,13 @@
+.logo-box {
+  width: 960px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 800px) {
+  .logo-box {
+    width: auto;
+  }
+}

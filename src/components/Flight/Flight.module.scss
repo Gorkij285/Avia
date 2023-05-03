@@ -1,0 +1,48 @@
+.flight-box {
+  width: 502px;
+  height: 184px;
+  background: #ffffff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.price-company {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.p {
+  color: #2196f3;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+}
+.ticket {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.bar {
+  width: 154px;
+}
+.info {
+  font-weight: 600;
+  font-size: 12px;
+  color: #a0b0b9;
+  margin-bottom: 3px;
+}
+.value-info {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  color: #4a4a4a;
+}
+
+@media (max-width: 540px) {
+  .flight-box {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+}
