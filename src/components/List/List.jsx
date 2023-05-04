@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
-import { stopLoading } from "../../store/listSlice";
+import { useSelector } from "react-redux";
 import BarLoader from "react-spinners/BarLoader";
 import "./List.scss";
 import Flight from "../Flight/Flight";
@@ -47,6 +46,8 @@ function List() {
 
     const newArr = filteredArr.filter((element, index) => index % 2 === 0);
 
+    const footer = filteredArr.length>1 ? <MoreButton /> : <h2>Совпадений не найдено</h2>
+
     return (
       <div className="list-wrapper">
         {load}
@@ -60,7 +61,7 @@ function List() {
             />
           );
         })}
-        <MoreButton />
+        {footer}
       </div>
     );
   } else {
@@ -69,3 +70,4 @@ function List() {
 }
 
 export default List;
+
